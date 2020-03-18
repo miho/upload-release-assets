@@ -25,5 +25,5 @@ jobs:
       - uses: AButler/upload-release-assets@v2.0
         with:
           files: 'README.md'
-          release-tag: ${{ steps.tagName.outputs.tag }}    
+          release-tag: v${{ steps.tagName.outputs.tag }}    
           repo-token: ${{ secrets.GITHUB_TOKEN }}
